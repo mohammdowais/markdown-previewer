@@ -1,0 +1,70 @@
+body{
+  background-color:cadetblue;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  height: 80vh;
+  padding-top: 5rem;
+}
+
+.container>*{
+  width: 50%;
+  background-color: rgb(140, 209, 209);
+}
+
+.topbar{
+  background-color: rgb(33, 39, 39);
+  padding: 0.8rem;
+  color: aliceblue;
+}
+.editor{
+  border: 2px solid black;
+}
+textarea{
+  width:  95% !important;
+  min-height: 87.5% !important;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.wrap-preview{
+  text-wrap: wrap;  
+  border: 2px solid black;  
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: auto;
+}
+.preview{
+  padding: 2rem;
+  text-wrap: wrap;
+}
+pre{
+  width: 90%;
+  background-color: azure;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px){
+  .container{
+    flex-direction: column;
+    height: 100%;
+  }
+  .container>*{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin-bottom: 2rem ;
+  }
+  textarea{
+    max-width: 88vw;
+    height: 50vh;
+  }
+}
